@@ -27,12 +27,12 @@ nav{
 }
 .main{
     width: 100%;
-    height: calc(100%-60px);
+    height: calc(100% - 60px);
     background: url(../img/%D0%9F%D0%B0%D1%80%D0%B5%D0%BD%D1%8C.png) 90% 100%/auto 85% no-repeat,url(../img/%D1%84%D0%BE%D0%BD.jpg) center/cover no-repeat;
 }
 .title_cont{
     float: left;
-    margin: 432px 0px 0px 404px;
+    margin: 325px 0px 0px 300px;
     color: #2c384a;
     text-align: center;
 }
@@ -41,7 +41,7 @@ nav{
     font-weight: bold;
 }
 .title_cont h4{
-    margin-top: 40px;
+    margin-top: 25px;
     font-size: 22px;
     color: #79818d;
 }
@@ -54,7 +54,7 @@ nav{
     color: #6d7682;
     font-size: 13px;
     padding: 0px 16px;
-    margin: 58px 14px 0px 14px;
+    margin: 35px 14px 0px 14px;
 }
 .second_page h1{
     text-align: center;
@@ -62,14 +62,72 @@ nav{
     margin: 100px 0px 30px 0px;
     font-size: 30px;
     font-weight: bold;
-    font-family: sans-serif;
+    font-family: sans-serif;    
+}
+.photos_p2{
+    text-align: center;
+    margin: 20px 0px 20px 0px;
 }
 .second_page p{
+    float: left;
+    font-size: 15px;
+    color: #6f707e;
     text-align: left;
-    font-family: inherit;
-    color: black;
-    margin: 0px 0px 20px 0px;
+    margin: 0px 275px 45px 275px;
 }
 .second_page input{
-    heigt
+    height: 30px;
+    width: 120px;
+    border: 2px solid #6f707e;
+    background: none;
+    border-radius: 6px;
+    color: #6f707e;
+    font-size: 12px;
+    padding: 0px 12px;
+    text-align: center;
+    margin: 0px 46% 0px 46%;
+}
+.th_page{
+    width: 100%;
+    height: 500px;
+    background: url(../img/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0%20%D1%84%D0%BE%D0%BD%D0%B0.png) center/cover no-repeat;   
+}
+.th_page h1{
+    text-align: center;
+    color: #2c384a;
+    margin: 100px 0px auto 0px;
+    padding: 100px 0px 30px 0px; 
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.ph_th_pg{
+    text-align: center;
+    margin: 0px 0px 10px 0px;
+}
+.icons_th_pg ul{
+    text-align: center;
+    padding: 0px 42px 90px 42px;
+    color: #3f495a;
+}
+.icons_th_pg h3{
+    text-align: center;
+    font-size: 17px;
+    color: #cf7600;
+    font-weight: bold;
+}
+.four_page h1{
+    text-align: center;
+    color: #2c384a;
+    margin-top: 110px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.ph_fr{
+    text-align: center;
+    margin-top: 30px;
+    padding: 30px 0px 30px 0px;
+    font-size: 13px;
+    color: #2c384a; 
 }
