@@ -153,7 +153,7 @@ nav {
     color: #2c384a;
 }
 
-.ph_fr > p {
+.ph_fr p {
     text-align: center;
     font-size: 15px;
     color: #2c384a;
@@ -168,7 +168,23 @@ nav {
 }
 
 .bottom_f_pg {
-    margin: 0px auto 0px 375px;
+    float: left;
+    width: 300px;
+    margin: 0px auto 0px 250px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #384354;
+}
+
+.project_name h4 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #384354;
+    padding: 20px 0px 20px 0px;
+}
+
+.project_name p {
+    width: 1300px;
     font-size: 15px;
     font-weight: bold;
     color: #384354;
@@ -267,63 +283,129 @@ nav {
     font-size: 40px;
     font-weight: bold;
 }
-.ph_cm{
+
+.ph_cm {
     text-align: center;
     margin: 30px auto 50px auto;
 }
-.comments{
+
+.comments {
     text-align: center;
     font-size: 15px;
     font-weight: 300;
     color: #243042;
 }
-.comments h4{
+
+.comments h4 {
     text-align: center;
     font-size: 15px;
     font-weight: 300;
     color: #243042;
     margin-top: 35px;
 }
-.comments>img{
+
+.comments > img {
     margin: 50px auto 90px auto;
 }
-footer{
+
+footer {
     height: 700px;
     background: url(../img/%D0%A4%D0%BE%D0%BD%20%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B.png);
 }
-footer h1{
+
+footer h1 {
     text-align: center;
     padding-top: 100px;
     font-size: 40px;
     font-weight: bold;
     color: white;
 }
-.ph_contacts{
+
+.ph_contacts {
     text-align: center;
     margin-top: 30px;
 }
-footer>p{
+
+footer > p {
     text-align: center;
     font-size: 13;
     font-weight: 500;
     color: white;
     padding-top: 25px;
 }
-footer li{
+
+footer ul {
+    height: 150px;
+}
+
+footer li {
     float: left;
     width: 250px;
-    margin:45px auto 0px 185px;
+    margin: 45px auto 0px 185px;
     text-align: center;
     color: white;
     font-size: 18px;
 }
-.msg{
+
+.msg {
     text-align: center;
     font-size: 30px;
     font-weight: bold;
     color: white;
 }
 
+.but1{
+    height: 15px;
+    width: 300px;
+    text-align: left;
+    border: 2px solid;
+    background: #fff;
+    opacity: 50%;
+    color: #6d7682;
+    font-size: 10px;
+    margin: 10px 7px 0px 350px;
+    padding: 5px 7px;
+    font-weight: bold;
+}
+.but2{
+    height: 15px;
+    width: 300px;
+    text-align: left;
+    border: 2px solid;
+    background: #fff;
+    opacity: 50%;
+    color: #6d7682;
+    font-size: 10px;
+    margin: 10px 7px 0px 350px;
+    padding: 5px 7px;
+    font-weight: bold;
+}
 
-
-
+footer textarea {
+    height: 50px;
+    width: 700px;
+    text-align: left;
+    border: 2px solid;
+    background: #fff;
+    opacity: 50%;
+    color: #6d7682;
+    font-size: 13px;
+    margin:10px 0px 0px 350px;
+}
+.button{
+    height: 30px;
+    width: 130px;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background: none;
+    color: #fff;
+    font-size: 10px;
+    margin: 30px 0px 0px 670px; 
+    padding: 7px 7px; 
+}
+.icons_footer{
+    text-align: center;
+    padding: 75px 27px 65px 27px;
+    
+}
