@@ -9,29 +9,47 @@
 </head>
 
 <body>
+    <!--<div class="preloader-1">
+        <svg>
+            <g>
+                <path d="M 50,100 A 1,1 0 0 1 50,0" />
+            </g>
+            <g>
+                <path d="M 50,75 A 1,1 0 0 0 50,-25" />
+            </g>
+            <defs>
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color:#BFE2FF;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#337AB7;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+        </svg>
+    </div>-->
     <header>
         <nav>
             <div class="logo">Андрей Браун</div>
             <div class="menu">
                 <ul>
-                    <li>Обо мне</li>
-                    <li>Услуги</li>
-                    <li>Кейсы</li>
-                    <li>Прайс</li>
-                    <li>Отзывы</li>
-                    <li>Контакты</li>
+                    <li><a href="#">Обо мне</a></li>
+                    <li><a href="#">услуги</a></li>
+                    <li><a href="#">Кейсы</a></li>
+                    <li><a href="#">Прайс</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Контакты</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-    <div class="main">
-        <div class="title_cont">
-            <h1>Привет <br> Я Андрей Браун</h1>
-            <h4>Фулл стек веб-разработчик</h4>
-            <input type="submit" value="Обо мне">
-            <input type="submit" value="Мои работы">
-        </div>
-    </div>
+    <main>
+        <section class="main">
+            <div class="title_cont">
+                <h1>Привет <br> Я Андрей Браун</h1>
+                <h4>Фулл стек веб-разработчик</h4>
+                <input type="button" value="Обо мне">
+                <input type="button" value="Мои работы">
+            </div>
+        </section>
+    </main>
     <div class="second_page">
         <h1>Обо мне</h1>
         <div class="photos_p2">
@@ -43,34 +61,36 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto alias in, fugiat ea commodi autem id, odio atque rem maxime aliquid accusamus dicta ad nam minima cum fuga ipsam, placeat adipisci illum minus a dolorum.</p>
         <input type="submit" value="Скачать резюме">
     </div>
-    <div class="th_page">
-        <h1>Что я умею</h1>
-        <div class="ph_th_pg">
-            <img src="../source/img/%D0%A7%D0%B5%D1%80%D1%82%D0%B0%20%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%BE%D0%B1%D0%BE%20%D0%BC%D0%BD%D0%B5.png" alt="">
-        </div>
-        <div class="icons_th_pg">
-            <ul>
-                <li>
-                    <img src="../source/img/%D0%BD%D0%BE%D1%83%D1%82%20%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B8%20%D1%82%D1%80%D0%B5%D1%82%D1%8C%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0.png" alt="">
-                    <h3>Веб-дизайн</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, nisi voluptas ipsum quos maxime maiores!</p>
-                </li>
-                <li>
-                    <img src="./img/%D0%B7%D0%BD%D0%B0%D0%BA.png" alt="Тоже самое что с фоткой">
-                    <h3>Разработка</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, aut quam voluptates cumque excepturi mollitia.</p>
-                </li>
-                <li>
-                    <img src="./img/%D1%80%D0%B0%D0%BA%D0%B5%D1%82%D0%B0.png" alt="Тоже самое что с фоткой">
-                    <h3>CEO-Оптимизация</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe accusantium cum dicta quaerat ex temporibus!</p>
-                </li>
-                <li>
-                    <img src="./img/%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BE%D1%84%D0%BE%D0%BD.png" alt="Тоже самое что с фоткой">
-                    <h3>Маркетинг</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda quos nihil similique neque. Unde, tempora.</p>
-                </li>
-            </ul>
+    <div class="th_pg_prlx">
+        <div class="th_page">
+            <h1>Что я умею</h1>
+            <div class="ph_th_pg">
+                <img src="../source/img/%D0%A7%D0%B5%D1%80%D1%82%D0%B0%20%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%BE%D0%B1%D0%BE%20%D0%BC%D0%BD%D0%B5.png" alt="">
+            </div>
+            <div class="icons_th_pg">
+                <ul>
+                    <li>
+                        <img src="../source/img/%D0%BD%D0%BE%D1%83%D1%82%20%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B8%20%D1%82%D1%80%D0%B5%D1%82%D1%8C%D1%8F%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0.png" alt="">
+                        <h3>Веб-дизайн</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, nisi voluptas ipsum quos maxime maiores!</p>
+                    </li>
+                    <li>
+                        <img src="./img/%D0%B7%D0%BD%D0%B0%D0%BA.png" alt="Тоже самое что с фоткой">
+                        <h3>Разработка</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, aut quam voluptates cumque excepturi mollitia.</p>
+                    </li>
+                    <li>
+                        <img src="./img/%D1%80%D0%B0%D0%BA%D0%B5%D1%82%D0%B0.png" alt="Тоже самое что с фоткой">
+                        <h3>CEO-Оптимизация</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe accusantium cum dicta quaerat ex temporibus!</p>
+                    </li>
+                    <li>
+                        <img src="./img/%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BE%D1%84%D0%BE%D0%BD.png" alt="Тоже самое что с фоткой">
+                        <h3>Маркетинг</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda quos nihil similique neque. Unde, tempora.</p>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="four_page">
@@ -114,37 +134,42 @@
             </select>
         </form>
         <img src="./img/%D0%BB%D0%B8%D0%BD%D0%B8%D1%8F%20%D0%BF%D0%BE%D0%B4%D0%B8%D1%82%D0%BE%D0%B3%D0%B0.png" alt="">
-        <h3>Сроки 0</h3>
-        <h3>Стоимость 0</h3>
+        <h3>Сроки <p>0</p>
+        </h3>
+        <h3>Стоимость <p>0</p>
+        </h3>
     </div>
-    <div class="statistic">
-        <h1>Немного статистики</h1>
-        <div class="photo_st">
-            <img src="./img/%D0%A7%D0%B5%D1%80%D1%82%D0%B0%20%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%BE%D0%B1%D0%BE%20%D0%BC%D0%BD%D0%B5.png" alt="">
+    <div class="parallax">
+        <div class="parallax_content">
+            <h1>Немного статистики</h1>
+            <div class="photo_st">
+                <img src="./img/%D0%A7%D0%B5%D1%80%D1%82%D0%B0%20%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%BE%D0%B1%D0%BE%20%D0%BC%D0%BD%D0%B5.png" alt="">
+            </div>
+            <ul>
+                <li>
+                    <img src="../source/img/%D1%81%D0%BC%D0%B0%D0%B9%D0%BB.png" alt="та же самая история с фотками">
+                    <h2>120</h2>
+                    <h3>счастливых клиентов</h3>
+                </li>
+                <li>
+                    <img src="../source/img/%D1%81%D0%BA%D0%BE%D0%B1%D0%BA%D0%B8.png" alt="">
+                    <h2>4.600</h2>
+                    <h3>часов работы</h3>
+                </li>
+                <li>
+                    <img src="../source/img/%D0%B3%D0%B0%D0%BB%D0%BE%D1%87%D0%BA%D0%B0.png" alt="...">
+                    <h2>340</h2>
+                    <h3>проектов завершено</h3>
+                </li>
+                <li>
+                    <img src="../source/img/%D0%BA%D1%83%D0%B1%D0%BE%D0%BA.png" alt="/\">
+                    <h2>24</h2>
+                    <h3>наград получено</h3>
+                </li>
+            </ul>
         </div>
-        <ul>
-            <li>
-                <img src="../source/img/%D1%81%D0%BC%D0%B0%D0%B9%D0%BB.png" alt="та же самая история с фотками">
-                <h2>120</h2>
-                <h3>счастливых клиентов</h3>
-            </li>
-            <li>
-                <img src="../source/img/%D1%81%D0%BA%D0%BE%D0%B1%D0%BA%D0%B8.png" alt="">
-                <h2>4.600</h2>
-                <h3>часов работы</h3>
-            </li>
-            <li>
-                <img src="../source/img/%D0%B3%D0%B0%D0%BB%D0%BE%D1%87%D0%BA%D0%B0.png" alt="...">
-                <h2>340</h2>
-                <h3>проектов завершено</h3>
-            </li>
-            <li>
-                <img src="../source/img/%D0%BA%D1%83%D0%B1%D0%BE%D0%BA.png" alt="/\">
-                <h2>24</h2>
-                <h3>наград получено</h3>
-            </li>
-        </ul>
     </div>
+
     <div class="comments">
         <h1>Отзывы</h1>
         <div class="ph_cm">
@@ -182,16 +207,12 @@
             <div class="msg">
                 <h2>Оставьте мне свое сообщение</h2>
             </div>
-            <div class="but1">
-                <input type="text" placeholder="Имя">
-            </div>
-            <div class="but2">
-                <input type="text" placeholder="EMAIL">
+            <div class="butts">
+                <input type="text" class="but1" placeholder="Имя">
+                <input type="text" class="but2" placeholder="EMAIL">
             </div>
             <textarea name="msg" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
-            <div class="button">
-                <input type="submit">
-            </div>
+            <input type="submit" class="Button_footer">
         </form>
         <div class="icons_footer">
             <img src="../source/img/%D1%84%D0%B1.png" alt="Иконка">
