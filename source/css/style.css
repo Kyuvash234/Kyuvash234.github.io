@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
 }
-/*.preloader-1 svg {
+.preloader-1 svg {
     overflow: visible;
     width: 100px;
     height: 150px;
@@ -46,21 +46,17 @@ body {
     100% {
         stroke-dasharray: 156px 157px;
         stroke-dashoffset: -156px;
-    }*/
+    }
 }
 a:visited{
     color: blue;
-    text-decoration: none;
-}
-footer a:visited{
-    color: white;
     text-decoration: none;
 }
 
 nav {
     position: fixed;
     width: 100%;
-    height: 50px;
+    height: 60px;
     background: #344051;
 }
 
@@ -68,7 +64,6 @@ nav {
     color: #fff;
     font-size: 28px;
     line-height: 50px;
-    padding-left: 250px;
     float: left;
     -webkit-animation: coming 2s ease;
     -o-animation: coming 2s ease;
@@ -77,15 +72,14 @@ nav {
 
 .menu {
     float: left;
-    padding-left: 300px;
 }
 
 .menu li {
     float: left;
     line-height: 60px;
-    color: white;
     margin-right: 40px;
-    font-size: 16px;
+    color: white;
+    font-size: 14px;
     text-transform: uppercase;
     -webkit-animation: topshift 0.4s ease forwards;
     -o-animation: topshift 0.4s ease forwards;
@@ -97,6 +91,7 @@ nav {
     color: #fff;
     transform: scale(1);
     display: inline-block;
+    text-decoration: none;
 }
 
 .menu li a:visited{
@@ -108,6 +103,7 @@ nav {
 .menu li a:active{
     transform: scale(1.1);
 }
+
 .menu li:nth-child(2){
     animation-delay: 0.4s;
 }
@@ -137,7 +133,6 @@ main{
 
 .title_cont {
     float: left;
-    margin: 325px 0px 0px 300px;
     color: #2c384a;
     text-align: center;
     opacity: 0;
@@ -578,6 +573,10 @@ footer textarea {
     font-weight: bold;
     padding: 2px 4px;
     margin: 10px 0px 0px 425px;
+}
+footer a:visited{
+    color: white;
+    text-decoration: none;
 }
 
 .Button_footer {
