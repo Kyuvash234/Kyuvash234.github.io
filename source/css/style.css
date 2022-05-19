@@ -1,22 +1,27 @@
 body {
     font-family: Arial, sans-serif;
 }
+
 .preloader-1 svg {
     overflow: visible;
     width: 100px;
     height: 150px;
 }
+
 .preloader-1 svg g {
     animation: preloader-1-slide 2s linear infinite;
 }
+
 .preloader-1 svg g:nth-child(2) {
     animation-delay: 0.5s;
 }
+
 .preloader-1 svg g:nth-child(2) path {
     animation-delay: 0.5s;
     stroke-dasharray: 0px 158px;
     stroke-dashoffset: 1px;
 }
+
 .preloader-1 svg path {
     stroke: url(#gradient);
     stroke-width: 20px;
@@ -26,29 +31,35 @@ body {
     stroke-dashoffset: 0;
     animation: preloader-1-escalade 2s cubic-bezier(0.8, 0, 0.2, 1) infinite;
 }
+
 @keyframes preloader-1-slide {
     0% {
         transform: translateY(-50px);
     }
+
     100% {
         transform: translateY(50px);
     }
 }
+
 @keyframes preloader-1-escalade {
     0% {
         stroke-dasharray: 0 157px;
         stroke-dashoffset: 0;
     }
+
     50% {
         stroke-dasharray: 156px 157px;
         stroke-dashoffset: 0;
     }
+
     100% {
         stroke-dasharray: 156px 157px;
         stroke-dashoffset: -156px;
     }
 }
-a:visited{
+
+a:visited {
     color: blue;
     text-decoration: none;
 }
@@ -58,6 +69,7 @@ nav {
     width: 100%;
     height: 60px;
     background: #344051;
+    z-index: 10;
 }
 
 .logo {
@@ -86,7 +98,8 @@ nav {
     animation: topshift 0.4s ease forwards;
     opacity: 0;
 }
-.menu li a{
+
+.menu li a {
     transition: all 0.1s;
     color: #fff;
     transform: scale(1);
@@ -94,33 +107,39 @@ nav {
     text-decoration: none;
 }
 
-.menu li a:visited{
+.menu li a:visited {
     color: white;
 }
-.menu li a:hover{
+
+.menu li a:hover {
     color: darkgoldenrod;
 }
-.menu li a:active{
+
+.menu li a:active {
     transform: scale(1.1);
 }
 
-.menu li:nth-child(2){
+.menu li:nth-child(2) {
     animation-delay: 0.4s;
 }
-.menu li:nth-child(3){
+
+.menu li:nth-child(3) {
     animation-delay: 0.8s;
 }
-.menu li:nth-child(4){
+
+.menu li:nth-child(4) {
     animation-delay: 1.2s;
 }
-.menu li:nth-child(5){
+
+.menu li:nth-child(5) {
     animation-delay: 1.6s;
 }
-.menu li:nth-child(6){
+
+.menu li:nth-child(6) {
     animation-delay: 2s;
 }
 
-main{
+main {
     width: 100%;
     height: 100%;
 }
@@ -131,7 +150,12 @@ main{
     background: url(../img/%D0%9F%D0%B0%D1%80%D0%B5%D0%BD%D1%8C.png) 90% 100%/auto 85% no-repeat, url(../img/%D1%84%D0%BE%D0%BD.jpg) center/cover no-repeat;
 }
 
+.white-btn:visited {
+    color: white;
+}
+
 .title_cont {
+    width: 100%;
     float: left;
     color: #2c384a;
     text-align: center;
@@ -145,7 +169,8 @@ main{
 }
 
 .title_cont h1 {
-    font-size: 60px;
+
+    font-size: 72px;
     font-weight: bold;
 }
 
@@ -168,39 +193,77 @@ main{
     transition: all 0.1s;
     transform: scale(1);
 }
-.title_cont input:hover{
+
+.title_cont input:hover {
     background: #344051;
     color: white;
 }
-.title_cont input:active{
+
+.title_cont input:active {
     transform: scale(1.1);
 }
-@keyframes coming{
-    from{
+
+@keyframes coming {
+    from {
         opacity: 0;
     }
-    to{
+
+    to {
         opacity: 1;
     }
 }
-@keyframes topshift{
-    from{
+
+@keyframes topshift {
+    from {
         opacity: 0;
         margin-top: -80px;
     }
-    to{
+
+    to {
         opacity: 1;
         margin-top: 0px;
     }
 }
-@keyframes leftshift{
-    from{
-    opacity: 0;
-    margin-left: -500px;
+
+@keyframes leftshift {
+    from {
+        opacity: 0;
+        margin-left: -500px;
     }
-    to{
-    opacity: 1;
-    margin-left: 300px;
+
+    to {
+        opacity: 1;
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .title_cont,
+    .title_cont h4,
+    .title_cont input {
+        color: white;
+        position: relative;
+        z-index: 3;
+    }
+
+    .main {
+        position: relative;
+    }
+
+    .title_cont input {
+        border: 2px solid #fff;
+    }
+
+    .main::after {
+        content: "";
+        bottom: 0;
+        top: 0;
+        right: 0;
+        left: 0;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 1;
     }
 }
 
@@ -219,16 +282,15 @@ main{
 }
 
 .second_page p {
-    float: left;
     font-size: 15px;
     color: #6f707e;
     text-align: left;
-    margin: 0px 275px 45px 275px;
+    padding-top: 20px;
+
 }
 
 .second_page input {
     height: 30px;
-    width: 120px;
     border: 2px solid #6f707e;
     background: none;
     border-radius: 6px;
@@ -236,17 +298,21 @@ main{
     font-size: 12px;
     padding: 0px 12px;
     text-align: center;
-    margin: 0px 46% 0px 46%;
+    margin-top: 15px;
 }
-.second_page input:hover{
-    color:aqua;
+
+.second_page input:hover {
+    color: aqua;
     background-color: cadetblue;
     border: 4px dashed cadetblue;
 }
-.second_page input:active{
+
+.second_page input:active {
     transform: scale(1.1)
 }
-.th_pg_prlx{
+
+.th_pg_prlx {
+    margin-top: 20px;
     width: 100%;
     height: 500px;
     background: url(../img/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0%20%D1%84%D0%BE%D0%BD%D0%B0.png) center/cover no-repeat;
@@ -256,8 +322,7 @@ main{
 .th_page h1 {
     text-align: center;
     color: #2c384a;
-    margin: 100px 0px auto 0px;
-    padding: 100px 0px 30px 0px;
+    padding-top: 60px;
     font-size: 30px;
     font-weight: bold;
     font-family: sans-serif;
@@ -270,16 +335,16 @@ main{
 
 .icons_th_pg li {
     display: block;
-    width: 300px;
     float: left;
     text-align: center;
     margin-top: 110px;
-    margin-left: 50px;
-    padding-left: 30px;
+    padding-left: 10px;
     color: #3f495a;
 }
-.icons_th_pg li:hover{
-    transform: scale(1.3);
+
+.icons_th_pg li:hover {
+    transform: scale(1.1);
+    transition: 0.7s ease;
 }
 
 .icons_th_pg h3 {
@@ -292,7 +357,7 @@ main{
 .four_page h1 {
     text-align: center;
     color: #2c384a;
-    margin-top: 110px;
+    margin-top: 60px;
     font-size: 30px;
     font-weight: bold;
     font-family: sans-serif;
@@ -300,7 +365,7 @@ main{
 
 .ph_fr {
     text-align: center;
-    padding: 30px 0px 30px 0px;
+    padding: 20px 0px 30px 0px;
     font-size: 13px;
     color: #2c384a;
 }
@@ -312,6 +377,11 @@ main{
     margin: 40px 0px 40px 0px;
 }
 
+.photo_portf {
+    display: flex;
+    justify-content: center;
+}
+
 .bottom_f_pg h4 {
     font-size: 25px;
     font-weight: bold;
@@ -321,13 +391,12 @@ main{
 
 .bottom_f_pg {
     float: left;
-    width: 300px;
-    margin: 0px auto 0px 250px;
     font-size: 15px;
     font-weight: bold;
     color: #384354;
 }
-.bottom_f_pg a:hover{
+
+.bottom_f_pg a:hover {
     color: darkorange;
     text-decoration: none;
 }
@@ -340,7 +409,6 @@ main{
 }
 
 .project_name p {
-    width: 1300px;
     font-size: 15px;
     font-weight: bold;
     color: #384354;
@@ -358,85 +426,124 @@ main{
     font-weight: bold;
     margin-top: 25px;
 }
-.bottom_f_pg input:hover{
+
+.bottom_f_pg input:hover {
     background-color: burlywood;
     color: chartreuse;
+    transition: 1s ease;
 }
-.bottom_f_pg input:active{
+
+.bottom_f_pg input:active {
     transform: scale(1.1);
     color: blueviolet;
     background-color: cyan;
+    transition: 0.1s ease;
 }
 
-.price h1 {
-    text-align: center;
-    margin: 180px 0px 50px 0px;
-    font-size: 30px;
-    font-weight: bold;
+.raschet {
+    margin-top: 40px;
+    box-shadow: 0px 0px 20px -1px #000000;
+    ;
 }
 
-.price h2 {
-    margin: 0px auto 25px 300px;
-    font-size: 27px;
-    font-weight: bolder;
-    color: #1c2534;
+.price_h {
+    color: #2c384a;
+    margin-top: 10px;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: sans-serif;
 }
 
-.price select {
-    width: 890px;
-    height: 60px;
-    margin: 20px 0px 40px 300px;
-    background: #eeeeee;
-    font-size: 14px;
-    padding: 20px 0px 20px 15px;
-}
-
-.price img {
-    margin: 0px auto 25px 300px;
-}
-
-.price h3 {
-    width: 890px;
-    font-size: 17px;
-    margin-left: 300px;
+.konst h2 {
     font-weight: 500;
-    color: #1c2534;
+    font-size: 20px;
+    color: darkblue;
 }
 
-.price h3 p {
-    text-align: end;
+.konst select {
+    height: 60px;
+    background-color: #eeeeee;
+    border: 2px solid #eee;
+    text-align: start;
+    padding: 0px 10px;
+    font-size: 10px;
+    color: #efefef;
+    width: 900px;
 }
 
+.line {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.konstr {
+    font-size: 15px;
+    color: #2c384a;
+    font-weight: 500;
+    float: left;
+}
+
+.konstr_2 {
+    font-size: 15px;
+    color: #2c384a;
+    font-weight: 500;
+    float: left;
+
+}
+.knopka input{
+    height: 45px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #eee;
+    border-radius: 5px;
+    background-color: #00b6af;
+    padding: 10px 10px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    transform: scale(1)
+}
+.knopka input:hover{
+    background-color:#2c384a; 
+    border-radius: 30px;
+    transition: 0.5s ease;
+}
+.knopka input:active{
+    transform: scale(1.2);
+    transition: 0.3s ease;
+}
 .parallax {
     height: 500px;
     width: 100%;
     margin-top: 100px;
     background: url(../img/%D1%84%D0%BE%D0%BD.png);
     background-attachment: fixed;
-    
 }
+
 
 .parallax_content h1 {
     text-align: center;
-    padding-top: 75px;
+    padding-top: 60px;
     font-size: 30px;
     font-weight: bold;
 }
 
-.photo_st {
+.photo_st img{
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .parallax_content li {
-    width: 350px;
     float: left;
     text-align: center;
     margin-top: 110px;
     color: #3f495a
 }
-.parallax_content li:hover{
+
+.parallax_content li:hover {
     transform: scale(1.2);
+    transition: 1s ease;
 }
 
 .parallax_content h2 {
@@ -454,21 +561,23 @@ main{
 
 .comments h1 {
     text-align: center;
-    padding-top: 75px;
+    padding-top: 40px;
     font-size: 40px;
     font-weight: bold;
 }
 
 .ph_cm {
     text-align: center;
-    margin: 30px auto 50px auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
-.comments {
+.comments p{
     text-align: center;
     font-size: 15px;
     font-weight: 300;
     color: #243042;
+    margin-bottom: 20px;
 }
 
 .comments h4 {
@@ -479,8 +588,9 @@ main{
     margin-top: 35px;
 }
 
-.comments > img {
-    margin: 50px auto 90px auto;
+.comments > img{
+    padding-left: 4px;
+    
 }
 
 footer {
@@ -490,8 +600,8 @@ footer {
 
 footer h1 {
     text-align: center;
-    padding-top: 45px;
-    font-size: 40px;
+    padding-top: 35px;
+    font-size: 20px;
     font-weight: bold;
     color: white;
 }
@@ -501,23 +611,19 @@ footer h1 {
     margin-top: 30px;
 }
 
-footer > p {
+footer p {
     text-align: center;
     font-size: 13;
     font-weight: 500;
     color: white;
     padding-top: 25px;
 }
-
-footer ul {
-    height: 150px;
-    margin: 45px auto 0px 220px;
+footer ul{
+    margin-top: 20px;
 }
 
 footer li {
     float: left;
-    width: 250px;
-    margin-left: 75px;
     text-align: center;
     color: white;
     font-size: 18px;
@@ -525,7 +631,7 @@ footer li {
 
 .msg {
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     color: white;
     padding-top: 25px;
@@ -534,7 +640,7 @@ footer li {
 .but1 {
     display: inline-block;
     height: 35px;
-    width: 300px;
+  
     border: 4px solid #fff;
     background: #ffe;
     opacity: 25%;
@@ -543,13 +649,11 @@ footer li {
     color: #fff;
     font-weight: bold;
     padding: 2px 4px;
-    margin: 25px auto 10px 425px;
 }
 
 .but2 {
     display: inline-block;
     height: 35px;
-    width: 300px;
     border: 4px solid #fff;
     background: #ffe;
     opacity: 25%;
@@ -558,12 +662,11 @@ footer li {
     color: #fff;
     font-weight: bold;
     padding: 2px 4px;
-    margin: 25px auto 10px 30px;
+    margin-left: 5px;
 }
 
 footer textarea {
     height: 80px;
-    width: 635px;
     border: 4px solid #fff;
     background: #ffe;
     opacity: 25%;
@@ -572,32 +675,34 @@ footer textarea {
     color: #fff;
     font-weight: bold;
     padding: 2px 4px;
-    margin: 10px 0px 0px 425px;
+    margin-top: 10px;
 }
-footer a:visited{
+
+footer a:visited {
     color: white;
     text-decoration: none;
 }
 
 .Button_footer {
     height: 30px;
-    width: 130px;
     text-align: center;
     border: 2px solid #fff;
     border-radius: 5px;
     background: none;
     color: #fff;
     font-size: 10px;
-    margin: 30px 0px 0px 670px;
     padding: 7px 7px;
+    margin-top: 10px;
 }
-.Button_footer:hover{
+
+.Button_footer:hover {
     color: blueviolet;
     background-color: cyan;
 }
-.Button_footer:active{
+
+.Button_footer:active {
     transform: scale(1.1);
-    
+
 }
 
 .icons_footer {
@@ -606,6 +711,7 @@ footer a:visited{
 }
 
 .icons_footer img {
-    padding: 0px 9px 0px 9px;
     height: 25px;
+    margin-top: 20px;
+    padding-left: 9px;
 }
