@@ -318,13 +318,15 @@ main {
     background: url(../img/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0%20%D1%84%D0%BE%D0%BD%D0%B0.png) center/cover no-repeat;
     background-attachment: fixed;
 }
-@media (max-width: 768px){
-    .th_pg_prlx{
+
+@media (max-width: 768px) {
+    .th_pg_prlx {
         height: 700px;
     }
 }
-@media (max-width: 576px){
-    .icons_th_pg li{
+
+@media (max-width: 576px) {
+    .icons_th_pg li {
         height: 80px;
     }
 }
@@ -501,7 +503,8 @@ main {
     float: left;
 
 }
-.knopka input{
+
+.knopka input {
     height: 45px;
     text-align: center;
     color: #fff;
@@ -515,15 +518,18 @@ main {
     margin-bottom: 25px;
     transform: scale(1)
 }
-.knopka input:hover{
-    background-color:#2c384a; 
+
+.knopka input:hover {
+    background-color: #2c384a;
     border-radius: 30px;
     transition: 0.5s ease;
 }
-.knopka input:active{
+
+.knopka input:active {
     transform: scale(1.2);
     transition: 0.3s ease;
 }
+
 .parallax {
     height: 500px;
     width: 100%;
@@ -532,8 +538,8 @@ main {
     background-attachment: fixed;
 }
 
-@media (max-width: 768px){
-    .parallax{
+@media (max-width: 768px) {
+    .parallax {
         height: 700px;
     }
 }
@@ -545,7 +551,7 @@ main {
     font-weight: bold;
 }
 
-.photo_st img{
+.photo_st img {
     text-align: center;
     margin-top: 30px;
 }
@@ -591,7 +597,13 @@ main {
     margin-bottom: 30px;
 }
 
-.comments p{
+.ph_comms {
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+
+.comments p {
     text-align: center;
     font-size: 15px;
     font-weight: 300;
@@ -607,9 +619,9 @@ main {
     margin-top: 35px;
 }
 
-.comments > img{
+.comments > img {
     padding-left: 4px;
-    
+
 }
 
 footer {
@@ -637,7 +649,8 @@ footer p {
     color: white;
     padding-top: 25px;
 }
-footer ul{
+
+footer ul {
     margin-top: 20px;
 }
 
@@ -659,7 +672,7 @@ footer li {
 .but1 {
     display: inline-block;
     height: 35px;
-  
+
     border: 4px solid #fff;
     background: #ffe;
     opacity: 25%;

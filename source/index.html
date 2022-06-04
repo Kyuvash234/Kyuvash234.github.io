@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./js/slick/slick.css">
+    <link rel="stylesheet" href="./js/slick/slick-theme.css">
 
 </head>
 
@@ -38,12 +40,12 @@
                     <div class=" px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">
                         <div class="menu">
                             <ul>
-                                <li><a href="#">Обо мне</a></li>
-                                <li><a href="#">Услуги</a></li>
-                                <li><a href="#">Кейсы</a></li>
-                                <li><a href="#">Прайс</a></li>
-                                <li><a href="#">Отзывы</a></li>
-                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#sec_pg">Обо мне</a></li>
+                                <li><a href="#th_pg">Услуги</a></li>
+                                <li><a href="#fr_pg">Кейсы</a></li>
+                                <li><a href="#price">Прайс</a></li>
+                                <li><a href="#comments">Отзывы</a></li>
+                                <li><a href="#foot">Контакты</a></li>
                             </ul>
                         </div>
                     </div>
@@ -54,12 +56,12 @@
                             </a>
 
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Обо мне</a></li>
-                                <li><a class="dropdown-item" href="#">Услуги</a></li>
-                                <li><a class="dropdown-item" href="#">Кейсы</a></li>
-                                <li><a class="dropdown-item" href="#">Прайс</a></li>
-                                <li><a class="dropdown-item" href="#">Отзывы</a></li>
-                                <li><a class="dropdown-item" href="#">Контакты</a></li>
+                                <li><a class="dropdown-item" href="#sec_pg">Обо мне</a></li>
+                                <li><a class="dropdown-item" href="#th_pg">Услуги</a></li>
+                                <li><a class="dropdown-item" href="#fr_pg">Кейсы</a></li>
+                                <li><a class="dropdown-item" href="#price">Прайс</a></li>
+                                <li><a class="dropdown-item" href="#comments">Отзывы</a></li>
+                                <li><a class="dropdown-item" href="#foot">Контакты</a></li>
                             </ul>
                         </div>
                     </div>
@@ -88,7 +90,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xl-2 col-sm-1 offset-sm-6 offset-xl-5 d-flex justify-content-center">
-                <div class="second_page">
+                <div class="second_page" id="sec_pg">
                     <h1>Обо мне</h1>
                     <div class="photos_p2">
                         <img src="../source/img/%D0%A7%D0%B5%D1%80%D1%82%D0%B0%20%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%BE%D0%B1%D0%BE%20%D0%BC%D0%BD%D0%B5.png" class="rounded mx-auto d-block" alt="...">
@@ -115,7 +117,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-2 col-sm-1 offset-sm-6 offset-xl-5 d-flex justify-content-center">
-                    <div class="th_page">
+                    <div class="th_page" id="th_pg">
                         <h1>Что я умею</h1>
                         <div class="ph_th_pg">
                             <img src="../source/img/%D0%A7%D0%B5%D1%80%D1%82%D0%B0%20%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%BE%D0%B1%D0%BE%20%D0%BC%D0%BD%D0%B5.png" alt="">
@@ -154,51 +156,107 @@
         </div>
 
     </div>
-    </div>
     <div class="container">
         <div class="row">
             <div class="col-xl-2 col-sm-1 offset-sm-6 offset-xl-5 d-flex justify-content-center">
-                <div class="four_page">
+                <div class="four_page" id="fr_pg">
                     <h1>Кейсы</h1>
                     <div class="ph_fr">
                         <img src="../source/img/%D0%A7%D0%B5%D1%80%D1%82%D0%B0%20%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%BE%D0%B1%D0%BE%20%D0%BC%D0%BD%D0%B5.png" alt="">
                     </div>
                 </div>
             </div>
-            <div class="col-xxl-10 col-md-8 col-sm-6 offset-md-2 offset-sm-3 d-flex justify-content-center">
+            <div class="col-10 col-md-8 col-sm-6 offset-md-2 offset-sm-3 d-flex justify-content-center">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, voluptas, vel! Eligendi, explicabo.</p>
             </div>
         </div>
-        <div class="row d-flex justify-content-center">
-            <div class="col-10">
-                <img class="photo_portf" src="../source/img/%D1%84%D0%BE%D1%82%D0%BA%D0%B0%20%D0%BA%D0%B5%D0%B9%D1%81%D1%8B.png" alt="Я не понял что здесь должно быть, поэтому будет фотка.">
+        <div class="slider_portf">
+            <div class="slide_1">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-10">
+                        <img class="photo_portf" src="../source/img/%D1%84%D0%BE%D1%82%D0%BA%D0%B0%20%D0%BA%D0%B5%D0%B9%D1%81%D1%8B.png" alt="Я не понял что здесь должно быть, поэтому будет фотка.">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xxl-2 col-xl-2 col-lg-2 col-6 offset-3 offset-xxl-2 offset-xl-2 offset-lg-2 d-md-flex justify-content-center">
+                                    <div class="bottom_f_pg">
+                                        <h4>CLIENT:</h4>
+                                        <p>Компания, допустим Тинькофф</p>
+                                        <h4>WEBSITE:</h4>
+                                        <a href="#">Здесь_должна_быть_ссылка</a>
+                                        <br><input type="submit" value="VISIT LIVE SITE">
+                                    </div>
+                                </div>
+                                <div class="col-xxl-6 col-xl-6 col-lg-6 col-8 offset-2 d-flex justify-content-center offset-lg-1 offset-xl-1 offset-xxl-1">
+                                    <div class="project_name">
+                                        <h4>Название проекта</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At repudiandae quidem enim blanditiis sit nemo id, suscipit ea vitae voluptatum amet, corporis laboriosam possimus harum in, minus quas aperiam tempora.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide_2">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-10">
+                        <img class="photo_portf" src="../source/img/%D1%84%D0%BE%D1%82%D0%BA%D0%B0%20%D0%BA%D0%B5%D0%B9%D1%81%D1%8B.png" alt="Я не понял что здесь должно быть, поэтому будет фотка.">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xxl-2 col-xl-2 col-lg-2 col-6 offset-3 offset-xxl-2 offset-xl-2 offset-lg-2 d-md-flex justify-content-center">
+                                    <div class="bottom_f_pg">
+                                        <h4>CLIENT:</h4>
+                                        <p>Компания, допустим Тинькофф</p>
+                                        <h4>WEBSITE:</h4>
+                                        <a href="#">Здесь_должна_быть_ссылка</a>
+                                        <br><input type="submit" value="VISIT LIVE SITE">
+                                    </div>
+                                </div>
+                                <div class="col-xxl-6 col-xl-6 col-lg-6 col-8 offset-2 d-flex justify-content-center offset-lg-1 offset-xl-1 offset-xxl-1">
+                                    <div class="project_name">
+                                        <h4>Название проекта</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At repudiandae quidem enim blanditiis sit nemo id, suscipit ea vitae voluptatum amet, corporis laboriosam possimus harum in, minus quas aperiam tempora.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide_3">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-10">
+                        <img class="photo_portf" src="../source/img/%D1%84%D0%BE%D1%82%D0%BA%D0%B0%20%D0%BA%D0%B5%D0%B9%D1%81%D1%8B.png" alt="Я не понял что здесь должно быть, поэтому будет фотка.">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xxl-2 col-xl-2 col-lg-2 col-6 offset-3 offset-xxl-2 offset-xl-2 offset-lg-2 d-md-flex justify-content-center">
+                                    <div class="bottom_f_pg">
+                                        <h4>CLIENT:</h4>
+                                        <p>Компания, допустим Тинькофф</p>
+                                        <h4>WEBSITE:</h4>
+                                        <a href="#">Здесь_должна_быть_ссылка</a>
+                                        <br><input type="submit" value="VISIT LIVE SITE">
+                                    </div>
+                                </div>
+                                <div class="col-xxl-6 col-xl-6 col-lg-6 col-8 offset-2 d-flex justify-content-center offset-lg-1 offset-xl-1 offset-xxl-1">
+                                    <div class="project_name">
+                                        <h4>Название проекта</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At repudiandae quidem enim blanditiis sit nemo id, suscipit ea vitae voluptatum amet, corporis laboriosam possimus harum in, minus quas aperiam tempora.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-xxl-2 col-xl-2 col-lg-2 col-6 offset-3 offset-xxl-2 offset-xl-2 offset-lg-2 d-md-flex justify-content-center">
-                <div class="bottom_f_pg">
-                    <h4>CLIENT:</h4>
-                    <p>Компания, допустим Тинькофф</p>
-                    <h4>WEBSITE:</h4>
-                    <a href="#">Здесь_должна_быть_ссылка</a>
-                    <br><input type="submit" value="VISIT LIVE SITE">
-                </div>
-            </div>
-            <div class="col-xxl-6 col-xl-6 col-lg-6 col-8 offset-2 d-flex justify-content-center offset-lg-1 offset-xl-1 offset-xxl-1">
-                <div class="project_name">
-                    <h4>Название проекта</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At repudiandae quidem enim blanditiis sit nemo id, suscipit ea vitae voluptatum amet, corporis laboriosam possimus harum in, minus quas aperiam tempora.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
+
+    <div class="container" id="price">
         <div class="row">
             <div class="raschet col-10 offset-1">
                 <div class="col-xl-4 col-sm-1 d-flex justify-content-center offset-sm-6 offset-xl-4">
-                    <div class="price_h">
+                    <div class="price_h" id="price">
                         <h1>Расчет стоимости</h1>
                     </div>
                 </div>
@@ -207,56 +265,64 @@
                     <div class="konst">
                         <form action="#">
                             <div class="row">
-                                <div class="col-12">
+                                <div class="col-12" id="type">
                                     <h2>ТИП САЙТА</h2>
                                     <select name="type_site" id="1">
-                                        <option value="Сайт-визитка">Сайт-визитка</option>
-                                        <option value="Корпоративный сайт">Корпоративный сайт</option>
-                                        <option value="Мессенджер">Мессенджер</option>
+                                        <option value=1>Сайт-визитка</option>
+                                        <option value=2>Корпоративный сайт</option>
+                                        <option value=3>Мессенджер</option>
                                     </select>
                                 </div>
-                                <div class="col-12">
+                                <div class="col-12" id="des">
                                     <h2>Дизайн</h2>
                                     <select name="design" id="2">
-                                        <option value="Минималистичный">Минималистичный</option>
-                                        <option value="Броский">Броский</option>
-                                        <option value="Интерактивный">Интерактивный</option>
+                                        <option value=1>Минималистичный</option>
+                                        <option value=2>Броский</option>
+                                        <option value=3>Интерактивный</option>
                                     </select>
                                 </div>
-                                <div class="col-12">
+                                <div class="col-12" id="adapt">
                                     <h2>Адаптивность</h2>
                                     <select name="adaptability" id="3">
-                                        <option value="mobile">Для мобильных устройств</option>
-                                        <option value="pc">Для стационарных компьютеров и ноутбуков</option>
-                                        <option value="all">Кросплатформенный сайт</option>
+                                        <option value=1>Для мобильных устройств</option>
+                                        <option value=2>Для стационарных компьютеров и ноутбуков</option>
+                                        <option value=3>Кросплатформенный сайт</option>
                                     </select>
                                 </div>
                             </div>
                         </form>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-2 offset-1 konstr d-flex">
+                        <h3>Сроки</h3>
+                    </div>
+                    <div class="col-1 offset-7 d-flex justify-content-end">
+                        <p>0</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2 offset-1 konstr_2 d-flex">
+                        <h3>Стоимость</h3>
+                    </div>
+                    <div class="col-1 offset-7 d-flex justify-content-end">
+                        <p class="priceOfWork">0 рублей</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2 offset-5 d-flex justify-content-center knopka">
+                        <form action="#">
+                            <input type="submit" value="Оставить заявку">
+                        </form>
+                    </div>
+                </div>
 
-                <div class="col-2 offset-1 konstr d-flex">
-                    <h3>Сроки</h3>
-                </div>
-                <div class="col-1 offset-10 d-flex justify-content-end">
-                    <p>0</p>
-                </div>
-                <div class="col-2 offset-1 konstr_2">
-                    <h3>Стоимость</h3>
-                </div>
-                <div class="col-1 offset-10 d-flex justify-content-end">
-                    <p>0</p>
-                </div>
-                <div class="col-2 offset-5 d-flex justify-content-center knopka">
-                    <form action="#">
-                        <input type="submit" value="Оставить заявку">
-                    </form>
-                </div>
             </div>
+
         </div>
     </div>
-    <div class="parallax">
+
+    <div class="parallax" id="stat">
         <div class="parallax_content">
             <div class="container">
                 <div class="row">
@@ -268,31 +334,28 @@
                             <img src="./img/%D0%A7%D0%B5%D1%80%D1%82%D0%B0%20%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%BE%D0%B1%D0%BE%20%D0%BC%D0%BD%D0%B5.png" alt="">
                         </div>
                     </div>
-                    <div class="row d-flex justify-content-center">
-                    
-                        <ul>
-                            <li class="col-12 col-sm-6 col-md-3">
-                                <img src="../source/img/%D1%81%D0%BC%D0%B0%D0%B9%D0%BB.png" alt="та же самая история с фотками">
-                                <h2>120</h2>
-                                <h3>счастливых клиентов</h3>
-                            </li>
-                            <li class="col-12 col-sm-6 col-md-3">
-                                <img src="../source/img/%D1%81%D0%BA%D0%BE%D0%B1%D0%BA%D0%B8.png" alt="">
-                                <h2>4.600</h2>
-                                <h3>часов работы</h3>
-                            </li>
-                            <li class="col-12 col-sm-6 col-md-3">
-                                <img src="../source/img/%D0%B3%D0%B0%D0%BB%D0%BE%D1%87%D0%BA%D0%B0.png" alt="...">
-                                <h2>340</h2>
-                                <h3>проектов завершено</h3>
-                            </li>
-                            <li class="col-12 col-sm-6 col-md-3">
-                                <img src="../source/img/%D0%BA%D1%83%D0%B1%D0%BE%D0%BA.png" alt="/\">
-                                <h2>24</h2>
-                                <h3>наград получено</h3>
-                            </li>
-                        </ul>
-                    </div>
+                    <ul class="row d-flex justify-content-center">
+                        <li class="col-12 col-sm-6 col-md-3">
+                            <img src="../source/img/%D1%81%D0%BC%D0%B0%D0%B9%D0%BB.png" alt="та же самая история с фотками">
+                            <h2>120</h2>
+                            <h3>счастливых клиентов</h3>
+                        </li>
+                        <li class="col-12 col-sm-6 col-md-3">
+                            <img src="../source/img/%D1%81%D0%BA%D0%BE%D0%B1%D0%BA%D0%B8.png" alt="">
+                            <h2>4.600</h2>
+                            <h3>часов работы</h3>
+                        </li>
+                        <li class="col-12 col-sm-6 col-md-3">
+                            <img src="../source/img/%D0%B3%D0%B0%D0%BB%D0%BE%D1%87%D0%BA%D0%B0.png" alt="...">
+                            <h2>340</h2>
+                            <h3>проектов завершено</h3>
+                        </li>
+                        <li class="col-12 col-sm-6 col-md-3">
+                            <img src="../source/img/%D0%BA%D1%83%D0%B1%D0%BE%D0%BA.png" alt="/\">
+                            <h2>24</h2>
+                            <h3>наград получено</h3>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -300,30 +363,54 @@
     <div class="container">
         <div class="row">
             <div class="col-2 d-flex justify-content-center offset-5">
-                <div class="comments">
+                <div class="comments" id="comments">
                     <h1>Отзывы</h1>
                     <div class="ph_cm">
                         <img src="./img/%D0%A7%D0%B5%D1%80%D1%82%D0%B0%20%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%BE%D0%B1%D0%BE%20%D0%BC%D0%BD%D0%B5.png" alt="">
-                        <br>
-                        <img src="../source/img/%D0%B1%D0%BE%D1%80%D0%BE%D0%B4%D0%B0%D1%82%D1%8B%D0%B9%20%D0%BC%D1%83%D0%B6%D0%B8%D0%BA.jpg" alt="Бородатый мужик">
+
                     </div>
                 </div>
             </div>
-            <div class="col-8 offset-2 d-flex justify-content-center">
+            <div class="slider_coms">
+                <div class="slide">
+                    <div class="col-8 offset-2 d-flex justify-content-center">
                 <div class="comments">
+                    <div class="ph_comms">
+                        <img src="../source/img/%D0%B1%D0%BE%D1%80%D0%BE%D0%B4%D0%B0%D1%82%D1%8B%D0%B9%20%D0%BC%D1%83%D0%B6%D0%B8%D0%BA.jpg" alt="Бородатый мужик">
+                    </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit neque dolores tempore voluptatem, corporis alias doloremque eligendi sequi rerum aliquid.</p>
                     <h4><b>Имя</b> и должность бородатого мужика</h4>
                 </div>
             </div>
-            <div class="col-2 offset-5 d-flex justify-content-center mb-5 mt-5">
-                <img src="../source/img/%D0%9E%D1%80%D0%B0%D0%BD%D0%B6.png">
-                <img src="../source/img/%D0%9E%D1%80%D0%B0%D0%BD%D0%B6%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png" alt="">
-                <img src="../source/img/%D0%9E%D1%80%D0%B0%D0%BD%D0%B6%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%202.png" alt="">
+                </div>
+                <div class="slide">
+                    <div class="col-8 offset-2 d-flex justify-content-center">
+                <div class="comments">
+                    <div class="ph_comms">
+                        <img src="../source/img/%D0%B1%D0%BE%D1%80%D0%BE%D0%B4%D0%B0%D1%82%D1%8B%D0%B9%20%D0%BC%D1%83%D0%B6%D0%B8%D0%BA.jpg" alt="Бородатый мужик">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit neque dolores tempore voluptatem, corporis alias doloremque eligendi sequi rerum aliquid.</p>
+                    <h4><b>Имя</b> и должность бородатого мужика</h4>
+                </div>
             </div>
+                </div>
+                <div class="slide">
+                    <div class="col-8 offset-2 d-flex justify-content-center">
+                <div class="comments">
+                    <div class="ph_comms">
+                        <img src="../source/img/%D0%B1%D0%BE%D1%80%D0%BE%D0%B4%D0%B0%D1%82%D1%8B%D0%B9%20%D0%BC%D1%83%D0%B6%D0%B8%D0%BA.jpg" alt="Бородатый мужик">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit neque dolores tempore voluptatem, corporis alias doloremque eligendi sequi rerum aliquid.</p>
+                    <h4><b>Имя</b> и должность бородатого мужика</h4>
+                </div>
+            </div>
+                </div>
+            </div>
+            
         </div>
     </div>
     <footer>
-        <div class="container">
+        <div class="container" id="foot">
             <div class="row">
                 <div class="col-xxl-2 col-4 offset-xxl-5 offset-4 d-flex justify-content-center">
                     <h1>МОИ КОНТАКТЫ</h1>
@@ -384,6 +471,12 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/active_li_nav.js"></script>
+    <script src="js/karousel.js"></script>
+    <script src="js/links_nav.js"></script>
+    <script src="js/slick/slick.min.js"></script>
     <script src="js/calc.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
