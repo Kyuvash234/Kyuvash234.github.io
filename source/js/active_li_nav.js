@@ -1,4 +1,4 @@
-$(window).scroll() => {
+$(window).scroll(() => {
     let scrollDistance = $(window).scrollTop();
     $(".container").each(i, el) => {
         if ($(el).offset().top = $("nav").outerHeight() <= scrollDistnace){
@@ -10,4 +10,4 @@ $(window).scroll() => {
         };
     };
     $("nav li:eq('+ i +')").find('a').addClass('active');
-}
+});
